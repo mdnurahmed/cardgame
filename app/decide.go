@@ -10,5 +10,6 @@ func (g *Game) evaluate(p int) (string, int) {
 }
 
 func getAlphaNumericValue(card string) string {
-	panic("not implemeneted")
+	chars := []rune(card)
+	return string(chars[0 : len(chars)-1])
 }
